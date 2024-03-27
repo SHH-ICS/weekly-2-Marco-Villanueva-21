@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
   <head>
-    <title></title>
+    <title>Circumference and Area Calculator</title>
 
     <!-- MDL Inclusions -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -12,33 +12,13 @@
   </head>
 
   <body>
-    <py-script> 
-      import math
-      x = input("Input a diameter. ")
-      
-      if x.isdigit():
-      
-        x = float(x)
-        if x > 0:
-          r = x/2
-      
-          b = r*r
-          A = b*(math.pi)
-          A = round(A, 2)
-          print ("The area is", A)
-      
-          y = 2*(math.pi)
-          C = y*r
-          C = round(C, 2)
-      
-          print ("The circumferece is", C)
-      
-        elif x <= 0:
-          print("Error! Invalid input (did you input a negative number?)")
-      
-      else: 
-        print("Error! Invalid input (did you input a letter?)")
-      </py-script>
+    <form action="#">
+      <div class="mdl-textfield mdl-js-textfield">
+        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample2" name="v">
+        <label class="mdl-textfield__label" for="sample2">Number...</label>
+        <span class="mdl-textfield__error">Input is not a number!</span>
+      </div>
+    </form>
   
     <form name="myForm" action="handler.php" method="POST">
           
