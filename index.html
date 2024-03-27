@@ -6,10 +6,39 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />  
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
 
   </head>
 
   <body>
+    <py-script> 
+      import math
+      x = input("Input a diameter. ")
+      
+      if x.isdigit():
+      
+        x = float(x)
+        if x > 0:
+          r = x/2
+      
+          b = r*r
+          A = b*(math.pi)
+          A = round(A, 2)
+          print ("The area is", A)
+      
+          y = 2*(math.pi)
+          C = y*r
+          C = round(C, 2)
+      
+          print ("The circumferece is", C)
+      
+        elif x <= 0:
+          print("Error! Invalid input (did you input a negative number?)")
+      
+      else: 
+        print("Error! Invalid input (did you input a letter?)")
+      </py-script>
   
     <form name="myForm" action="handler.php" method="POST">
           

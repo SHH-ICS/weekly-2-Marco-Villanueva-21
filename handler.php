@@ -10,12 +10,26 @@
   <body>
     
     <?php
-    $myVariable = "";
-    if ( isset( $_POST['myVariable'] ) ){
-      $myVariable = $_POST['myVariable'];
+    $v = "";
+    if ( isset( $_POST['v'] ) ){
+      $v = $_POST['v'];
+    }
+
+    if ($v > 0) {
+      $r = ($v/2);
+      $b = ($r*$r);
+      $A = ($b*pi());
+      $A = (round ($A, 2));
+      echo "The area is $A";
+ 
+      $y = (2*pi());
+      $C = ($y*$r);
+      $C = (round($C, 2));  
+      echo "The circumference is $C";
+
     }
     echo "<h1>My Program</h1>\n";
-    echo "<p>My Variable is = ".$myVariable."</p>\n";
+    echo "<p>My Variable is = ".$v."</p>\n";
     ?>
     
   </body>
