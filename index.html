@@ -5,7 +5,7 @@
     <!-- MDL Inclusions -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 
   </head>
@@ -13,7 +13,7 @@
   <body>
     <h1>Hello user! Welcome to the Circumference and Area Calculator!</h1>
     <p>Simply enter your radius in the area below and you will recieve your answer!</p>
-    <form action="handler.php" method="GET">
+    <form action="handler.php" method="POST">
       <div class="mdl-textfield mdl-js-textfield">
         <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample2" name="rad">
         <label class="mdl-textfield__label" for="sample2">Enter here...</label>

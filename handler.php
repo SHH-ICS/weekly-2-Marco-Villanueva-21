@@ -11,8 +11,8 @@
     
     <?php
     $rad = "";
-    if ( isset( $_GET['rad'] ) ){
-      $rad = $_GET['rad'];
+    if ( isset( $_POST['rad'] ) ){
+      $rad = $_POST['rad'];
     }
 
     if ($rad > 0) {
