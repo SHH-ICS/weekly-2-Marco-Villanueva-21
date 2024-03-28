@@ -10,13 +10,13 @@
   <body>
     
     <?php
-    $v = "";
-    if ( isset( $_POST['v'] ) ){
-      $v = $_POST['v'];
+    $rad = "";
+    if ( isset( $_POST['rad'] ) ){
+      $rad = $_POST['rad'];
     }
 
-    if ($v > 0) {
-      $r = ($v/2);
+    if ($rad > 0) {
+      $r = ($rad/2);
       $b = ($r*$r);
       $A = ($b*pi());
       $A = (round ($A, 2));
