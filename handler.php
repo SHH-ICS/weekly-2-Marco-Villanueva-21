@@ -11,8 +11,8 @@
     
     <?php
     $rad = "";
-    if ( isset( $_POST['rad'] ) ){
-      $rad = $_POST['rad'];
+    if ( isset( $_GET['rad'] ) ){
+      $rad = $_GET['rad'];
     }
 
     if ($rad > 0) {
@@ -30,6 +30,10 @@
     }
     echo "<h1>My Program</h1>\n";
     echo "<p>My Variable is = ".$v."</p>\n";
+
+    if ($rad<=0) {
+      echo "Error! Input invalid! Did you enter a 0 or a negative number?";
+    }
     ?>
     
   </body>
