@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/calstyles.css">
     <title>Calculated!</title>
   </head>
 
@@ -22,7 +22,7 @@
       $b = ($r*$r);
       $A = ($b*pi());
       $A = (round ($A, 2));
-      echo "<p>The area is " .$A. "</p>/n";
+      echo "<p>The area is " .$A. "</p>\n";
  
       $y = (2*pi());
       $C = ($y*$r);
