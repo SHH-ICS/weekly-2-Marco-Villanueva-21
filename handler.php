@@ -22,7 +22,7 @@
       $b = ($r*$r);
       $A = ($b*pi());
       $A = (round ($A, 2));
-      echo "<p>The area is " .$A. "</p>\n";
+      echo "<p>The area is " .$A. "</p>\n\n";
  
       $y = (2*pi());
       $C = ($y*$r);
