@@ -18,7 +18,9 @@
     }
     
     if ($rad<0) {
-      echo "<script> window.location.href = './error.html';";
+      echo "<h1> Error! :(</h1>\n";
+      echo "<p>Invalid Input!</p>\n";
+      echo "<p>Perhaps you inputted a negative number?</p>\n";
     }
     ?>
     <?php
