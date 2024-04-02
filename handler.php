@@ -18,7 +18,7 @@
     }
     
     if ($rad<0) {
-      echo "<script> window.location.href = 'http://www.w3schools.com';";
+      echo "<script> window.location.href = './error.html';";
     }
     ?>
     <?php
