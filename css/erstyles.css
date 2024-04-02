@@ -1,0 +1,14 @@
+* {
+  text-align:center;
+  background-color: cadetblue;
+}
+
+h1 {
+  font-size:larger;
+  color: red;
+}
+
+p {
+  color:orangered;
+  font-size:x-large;
+}

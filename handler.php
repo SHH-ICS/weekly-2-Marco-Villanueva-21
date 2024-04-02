@@ -16,18 +16,28 @@
     if ( isset( $_POST['rad'] ) ){
       $rad = $_POST['rad'];
     }
+    
+    if ($rad<0) {
+      echo "<script> window.location.href = 'http://www.w3schools.com';";
+    }
+    ?>
+    <?php
+    $rad = "";
+    if ( isset( $_POST['rad'] ) ){
+      $rad = $_POST['rad'];
+    }
 
     if ($rad > 0) {
       $r = ($rad/2);
       $b = ($r*$r);
       $A = ($b*pi());
       $A = (round ($A, 2));
-      echo "<p>The area is " .$A. "</p>\n\n";
+      echo "<p>The area is " .$A. " units</p>\n\n";
  
       $y = (2*pi());
       $C = ($y*$r);
       $C = (round($C, 2));  
-      echo "<p>The circumference is " .$C. "</p>\n";
+      echo "<p>The circumference is " .$C. " units</p>\n";
 
     }
     // echo "<h1>My Program</h1>\n";
