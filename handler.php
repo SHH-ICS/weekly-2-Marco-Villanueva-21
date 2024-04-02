@@ -5,24 +5,11 @@
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <link rel="stylesheet" href="./css/calstyles.css">
-    <title>Calculated!</title>
+    <title>Results</title>
   </head>
 
   <body>
     
-    <h1>Calculated!<h1>
-    <?php
-    $rad = "";
-    if ( isset( $_POST['rad'] ) ){
-      $rad = $_POST['rad'];
-    }
-    
-    if ($rad<0) {
-      echo "<h1> Error! :(</h1>\n";
-      echo "<p>Invalid Input!</p>\n";
-      echo "<p>Perhaps you inputted a negative number?</p>\n";
-    }
-    ?>
     <?php
     $rad = "";
     if ( isset( $_POST['rad'] ) ){
@@ -30,6 +17,7 @@
     }
 
     if ($rad > 0) {
+      echo "<h1>Calculated!<h1>\n";
       $r = ($rad/2);
       $b = ($r*$r);
       $A = ($b*pi());
@@ -46,7 +34,9 @@
     // echo "<p>My Variable is = ".$v."</p>\n";
 
     if ($rad<=0) {
-      echo "Error! Input invalid! Did you enter a 0 or a negative number?";
+      echo "<h1> Error! :(</h1>\n";
+      echo "<p>Invalid Input!</p>\n";
+      echo "<p>Perhaps you inputted a negative number?</p>\n";";
     }
     ?>
     
