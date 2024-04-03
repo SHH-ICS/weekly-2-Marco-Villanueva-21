@@ -16,6 +16,12 @@
       $rad = $_POST['rad'];
     }
 
+    if ($rad<=0) {
+      echo "<h1> Error! :(</h1>\n";
+      echo "<p>Invalid Input!</p>\n";
+      echo "<p>Perhaps you inputted a negative number?</p>\n"; 
+    }
+
     if ($rad > 0) {
       echo "<h1>Calculated!<h1>\n";
       $r = ($rad/2);
@@ -32,12 +38,6 @@
     }
     // echo "<h1>My Program</h1>\n";
     // echo "<p>My Variable is = ".$v."</p>\n";
-
-    if ($rad<=0) {
-      echo "<h1> Error! :(</h1>\n";
-      echo "<p>Invalid Input!</p>\n";
-      echo "<p>Perhaps you inputted a negative number?</p>\n";";
-    }
     ?>
     
   </body>
